@@ -1,0 +1,167 @@
+
+body{
+
+    padding: 0;
+    margin: 0;
+    background: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* ------------ container ------------ */
+#container{
+    width:450px;
+    margin:0 auto;
+    border: 3px solid #000;
+    background: rgb(219, 218, 202);
+}
+
+/* ------------ header ------------ */
+#header {
+    display: flex;
+    width: 450px;
+    height:250px;
+    background-image: url('../img/header_bg.png');
+    background-repeat: no-repeat;
+    background-size:contain ;
+    position: relative;
+}
+
+#reload {
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:30px;
+    top: 20px;
+    z-index: 1;
+}
+
+#reload i{
+    font-size: 30px;
+    color: #fff;
+}
+
+#reload i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+#clock {
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    color: #FFF;
+    font-size: 27px;
+    
+}
+
+#zegar {
+    position: absolute;
+    bottom: 40px;
+    left: 330px;
+    color: #FFF;
+    font-size: 27px;
+   
+}
+
+/* ------------ content ------------ */
+#body {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+}
+#todolist{
+   
+    width: 450px;
+    padding-left: 20px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.task {
+    width:400px;
+    word-wrap: break-word;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.task i.co{
+    position: absolute;
+    font-size: 25px;
+    
+    left:10px;
+    top:10px;
+}
+
+.task i.co:hover{
+    cursor: pointer;
+}
+
+.fa-check-square{
+    color:#7ac500;
+}
+
+.task p.text{
+    display: flex;
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    max-width:285px;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : #7ac500;
+}
+
+.task i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+
+.task i.de:hover{
+    color:#c20000;
+    cursor: pointer;
+}
+
+/* ------------ add item ------------ */
+.add-task {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-task i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-task input{
+    width: 80% ;
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:20px;
+}

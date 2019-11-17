@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" 
+    integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    
+</head>
+<body onload="odliczanie();">
+    <div id="container">
+        <div id="header">
+            <div id="reload">
+                <i class="fas fa-retweet"></i>
+            </div>
+            <div id="clock"></div>
+            <div id=zegar>12:00:00</div>
+            
+          
+        </div>
+        <div id="body">
+            <ul id="todolist">
+
+            </ul>
+        </div>
+        <div class="add-task">
+            <i class="fas fa-plus-square"></i>
+            <input type="text" id="task-input" placeholder="Add new task">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
